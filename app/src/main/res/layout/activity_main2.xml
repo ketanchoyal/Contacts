@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:padding="7sp"
+        android:src="@drawable/ic_arrow_white_black_24dp"
+        android:id="@+id/back"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:padding="3sp"
+        android:src="@drawable/default_profile"
+        android:layout_toRightOf="@+id/back"
+        android:id="@+id/contact_pic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_toEndOf="@+id/contact_pic"
+        android:gravity="top"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:text="Name"
+        android:id="@+id/contact_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_toEndOf="@+id/contact_pic"
+            android:layout_below="@+id/contact_name"
+            android:gravity="top"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:text="Number"
+            android:id="@+id/contact_number"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/message_field"
+        android:layout_width="380sp"
+        android:layout_height="60sp"
+        android:gravity="center|end"
+        android:layout_alignParentBottom="true"
+        android:inputType="textMultiLine"
+        android:textSize="16sp"
+        android:padding="5sp"
+        android:background="@drawable/background"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50sp"
+        android:layout_height="60sp"
+        android:padding="5sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/message_field"
+        android:src="@drawable/ic_send_black_24dp"
+        android:id="@+id/send_btn"/>
+
+
+</RelativeLayout>
